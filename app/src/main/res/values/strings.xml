@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Сообщества</string>
+    <string name="error_auth_message">Не удалось авторизироваться, попробовать еще раз?</string>
+    <string name="unsubscriber_title">Отписаться от сообществ</string>
+    <string name="unsubscriber_description">Коснитесь и удерживайте,\n чтобы увидеть информацию\n о сообществе</string>
+    <string name="unsubscribe">Отписаться</string>
+    <string name="open">Открыть</string>
+    <string name="members">%s подписчиков</string>
+    <string name="error_message">Не удалось выполнить операцию, попробуйте позже</string>
+    <string name="error">Ошибка</string>
+    <string name="ok">Ок</string>
+    <string name="cancel">Отмена</string>
+
+    <integer name="com_vk_sdk_AppId">7260467</integer>
+</resources>

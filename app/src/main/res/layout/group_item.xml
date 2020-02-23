@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="101dp"
+    android:layout_height="145dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginEnd="12dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="?selectableItemBackground">
+
+    <FrameLayout
+        android:id="@+id/groupImageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/titleView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <ImageView
+            android:id="@+id/groupImageView"
+            android:layout_width="99dp"
+            android:layout_height="99dp"
+            android:layout_gravity="center"
+            tools:src="@color/colorBlack"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageViewSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_check_circle_28"
+        app:layout_constraintEnd_toEndOf="@id/groupImageContainer"
+        app:layout_constraintBottom_toBottomOf="@id/groupImageContainer"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/groupImageContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Сообщество" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
