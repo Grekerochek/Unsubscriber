@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity(), GroupDetailsBottomSheetDialogFragment.
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         val callback = object : VKAuthCallback {
             override fun onLogin(token: VKAccessToken) {
-                requestGroups()
+                init()
             }
 
             override fun onLoginFailed(errorCode: Int) {
